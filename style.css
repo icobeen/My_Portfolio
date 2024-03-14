@@ -1,0 +1,563 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+	margin : 0;
+	padding: 0 ;
+	box-sizing:border-box;
+	scroll-behavior: smooth;
+
+}
+
+header {
+	background-color: #F1EAFF;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center ;
+	padding: 10px 200px;
+}
+
+.logo{
+	text-decoration: none;
+	color: purple;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.80em ;
+	font-family: cursive;
+}
+
+.navigation a{
+
+	color:purple;
+	text-decoration: none;
+	font-size: 0.9em;
+	font-weight: 500;
+	padding-left: 20px;
+}
+.navigation a:hover{
+	color: #e498ff;
+}
+
+section{
+	padding: 100px 200px;
+}
+
+.main {
+	width : 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: url(images/pici2.jpg) no-repeat;
+	background-size: cover;
+	background-position: right;
+	background-attachment: fixed; 
+}
+
+.main h2{
+	color: white;
+	font-size: 1.4em;
+	font-weight: 700;
+}
+.main h2 span{
+	display: inline-block;
+	margin-top: 10px;
+	color: purple;
+	font-size: 1em;
+	font-weight: 600;
+	letter-spacing: 0.1px;
+}
+
+.main-btn{
+	color: #fff;
+	background-color: purple;
+	text-decoration: none;
+	font-size: 1.1em;
+	font-weight: 600;
+	display: inline-block;
+	padding: 0.5em 1em;
+	letter-spacing: 0.01px;
+	border-radius: 15px;
+	margin-bottom: 40px;
+	transition: 0.7s ease ;
+
+}
+.main-btn:hover{
+	background-color: #c879ff;
+	transform: : scale(1.1);
+}
+
+.social-icons a {
+	color: purple;
+	font-size:1.7em;
+	padding: 2px;
+	transition: 1.7em;
+
+}
+.social-icons:hover{
+	transform: scale(1.1);
+}
+
+
+.title{
+	display: flex;
+	justify-content: center;
+	color: purple;
+	font-size: 2.2em;
+	font-weight: 800;
+	margin-bottom: 30px;
+
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	 
+
+}
+
+.cards{
+	
+	background: url(images/purple.jpg) no-repeat;
+	background-size: cover;
+	background-position: right;
+	background-attachment: fixed; 
+}
+.card {
+	 
+	background-color:;
+	width: 11.25em;
+	height: 8em;
+	box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+	border-radius: 50%;
+	padding: 25px;
+	margin: 15px;
+	transition: 1.7em;
+}
+
+.card:hover {
+	transform: scale(1.1);
+
+}
+
+
+}
+¨.info{
+	text-align: center;
+}
+.info h3{
+	color:darkmagenta;
+	font-size: 1.2em;
+	font-weight: 900;
+	margin: 20px;
+	font-family: 'cursive',Brush Script MT;
+	
+} 
+
+
+
+
+
+/* Ajout de styles pour centrer le contenu dans la première card */
+#hardSkillsCard .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: purple;
+    font-family: monospace;
+
+}
+
+/* Ajout de styles pour centrer le contenu dans la deuxième card 
+#softSkillsCard .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ Ajout de styles pour la fenêtre contextuelle au survol 
+.card:hover .info::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    display: none;
+    background: url(images/pink.jpg);
+
+}*/
+
+.card:hover .info:hover::before {
+    display: block;
+}
+
+
+
+
+#cvCard h3 a {
+    color: purple; /* Change to the color you want */
+    text-decoration: none; /* Remove underline if needed */
+    font-family: unset;
+}
+
+#cvCard h3 a:hover {
+    color: #f9a8d4; /* Change to the color you want on hover */
+}
+
+
+
+
+
+
+
+
+
+.projects{
+	background-color: #E5D4FF; /* Set background color */
+	background: url(images/purple.jpg) no-repeat;
+	background-size: cover;
+	background-position: right;
+	background-attachment: fixed; 
+}
+
+.projects .content{
+	margin-top: 30px;
+	display: flex;
+	justify-content: center; /* Center the project cards */
+}
+
+.project-card{
+	border: 1px solid #F1EAFF;
+	min-height: 14em;
+	width: 15em;
+	height: 15em;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 20px;
+	transition: 0.7s ease;
+	position: relative; /* Set position to relative */
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.project-card:hover{
+	transform: scale(1.1);
+}
+
+.project-card:hover  .project-image{
+	opacity: 0.9;
+}
+
+.project-image img{
+	width: 400px;
+	height: 190px;
+
+	border-radius: 50%;
+	object-fit: cover;
+
+}
+
+.click-here{
+	text-decoration: none;
+	color: purple;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: unset;
+}
+
+.click-here:hover{
+	color: deeppink;
+}
+
+
+
+
+
+
+
+
+
+/* Additional styles for the About section 
+
+.about-section {
+   background-color:;
+	background: url(images/about.jpg) no-repeat;
+	background-size: cover;
+	background-position: right;
+	background-attachment: fixed; 
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h2 {
+    color: purple;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333; /* Adjust text color as needed */
+    /*margin-bottom: 20px;
+}
+/*
+.contact-info {
+    font-size: 1.1em;
+    color: #555; /* Adjust text color as needed 
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: purple;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #e498ff; /* Hover color */
+
+
+/*
+.profile-picture {
+    width: 100px; /* Adjust the width 
+    height: 100px; /* Adjust the height 
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+*/
+
+
+
+
+
+.contact .icon{
+	font-size: 3em;
+
+}
+.contact .info h3{
+	color: purple;
+
+}
+.contact .info p{
+	font-size: 0em;
+}
+
+.footer{
+	background-color: #ebdef0;
+	color: purple;
+	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.footer-title{
+	font-size: 0.7em;
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTACT */
+/* Reset des styles pour éliminer les marges et les paddings par défaut */
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: black;
+}
+
+/* Section styling */
+.cards {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form styling */
+.carde {
+  background-color: ;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+}
+
+form {
+  display: grid;
+  grid-gap: 15px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #F1EAFF;
+}
+
+select {
+  appearance: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: url(images/pink.jpg);
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .carde {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles pour les titres */
+.title {
+    color: purple; /* Couleur du texte */
+    font-family:cursive; /* Police de caractères */
+    /* Ajoutez d'autres styles au besoin */
+}
+
+
+
+/* Existing CSS styles */
+
+/* Existing CSS styles */
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    /* Add your styles for smaller screens here */
+    .project-card {
+        width: 100%; /* For example, make project cards take full width */
+    }
+
+    /* Add more styles as needed for smaller screens */
+}
+
